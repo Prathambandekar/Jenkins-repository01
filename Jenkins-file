@@ -1,0 +1,8 @@
+node{
+    stage('SCM Check-out'){
+      git 'https://github.com/Prathambandekar/Jenkins-repository01/new/main'
+    stage('Compile-Pakcage'){
+     sh 'mvn package'
+    }
+    }
+}
